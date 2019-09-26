@@ -13,7 +13,7 @@ local function GetPlanet(planetUtilities, planetID)
 			x = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][1]) or 1.00,
 			y = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][2]) or 1.00,
 			image = image,
-			size = planetUtilities.PLANET_SIZE_MAP*0.6,
+			size = planetUtilities.PLANET_SIZE_MAP*0.26,
 			hintText = "Click this planet to begin.",
 			hintSize = {400, 100}, -- Size of the hint box
 		},
@@ -22,9 +22,9 @@ local function GetPlanet(planetUtilities, planetID)
 			size = planetUtilities.PLANET_SIZE_INFO,
 			backgroundImage = planetUtilities.backgroundImages[math.floor(math.random()*#planetUtilities.backgroundImages) + 1],
 			terrainType = "Desert",
-			radius = "6050 km",
+			radius = "3396 km",
 			primary = "Mars",
-			primaryType = "MV",
+			primaryType = "Sol",
 			milRating = 1,
 --			feedbackLink = "http://zero-k.info/Forum/Thread/24417",
 			text = [[Something is terribly wrong here! We were called to support a "clean-up mission" because of some sort of wierd failed experiments. However, this Mars station is filled to the top with demonic creatures and there is no way to stop them here. We need to get to the airport and hope for evacuation!]]
@@ -49,7 +49,7 @@ local function GetPlanet(planetUtilities, planetID)
 				commander = false,
 				startUnits = {
 					{
-						name = "euf_sarge_lvl4",
+						name = "euf_sarge_camp6",
 						x = 7300,
 						z = 860,
 						facing = 3,

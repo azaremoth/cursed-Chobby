@@ -32,7 +32,7 @@ local function GetPlanet(planetUtilities, planetID)
 		tips = {
 			{
 				image = "unitpics/tc_ghoul.png",
-				text = [[Un unknown enemy entered the battleground.]]
+				text = [[An unknown enemy entered the battleground.]]
 			},		
 		},		
 		gameConfig = {
@@ -50,10 +50,11 @@ local function GetPlanet(planetUtilities, planetID)
 				startUnits = {
 					{
 						name = "euf_sarge_camp6",
-						x = 7300,
+						x = 6916,
 						z = 860,
 						facing = 3,
 						defeatIfDestroyedObjectiveID = 1,
+						commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {6500, 860}}, },
 						victoryAtLocation = {
 							x = 2600,
 							z = 770,
@@ -66,7 +67,6 @@ local function GetPlanet(planetUtilities, planetID)
 								color = "green"
 							},
 						},
-						{cmdID = planetUtilities.COMMAND.RAW_MOVE, pos = {2400, 770}, options = {"shift"}},
 					},					
 				},
 				midgameUnits = {
@@ -121,6 +121,8 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'wall_pillar2', x = 7200, z = 905, facing = 2, },					
 					{ name = 'wall_pillar2', x = 7150, z = 815, facing = 0, },
 					{ name = 'wall_pillar2', x = 7150, z = 905, facing = 2, },					
+
+					{ name = 'buildingmodule_lvl5_8', x = 2675, z = 1260, facing = 1, },
 					
 					{ name = 'bld_tunnel_high', x = 6060, z = 860, facing = 0, },
 					{ name = 'bld_tunnel_high', x = 6294, z = 860, facing = 0, },
@@ -346,7 +348,12 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'tube_down', x = 7253, z = 1192, facing = 2, },
 					{ name = 'tube_down', x = 7254, z = 536, facing = 0, },
 					{ name = 'wall_pillar1', x = 2279, z = 650, facing = 1, },
-					{ name = 'wall_pillar1', x = 2280, z = 700, facing = 1, },			
+					{ name = 'wall_pillar1', x = 2280, z = 700, facing = 1, },
+
+					{ name = 'wall_pillar1', x = 4920, z = 780, facing = 2, },
+					{ name = 'wall_pillar1', x = 4952, z = 780, facing = 2, },
+					{ name = 'wall_pillar1', x = 4920, z = 965, facing = 0, },
+					{ name = 'wall_pillar1', x = 4952, z = 965, facing = 0, },					
 			},		
 
 			aiConfig = {
@@ -358,8 +365,10 @@ local function GetPlanet(planetUtilities, planetID)
 					allyTeam = 0,
 					unlocks = {	},
 					startUnits = {
-						{ name = 'euf_marine', x = 6500, z = 560, facing = 2, {cmdID = planetUtilities.COMMAND.RAW_MOVE, pos = {500, 3500}, options = {"shift"}}, },
-						{ name = 'euf_marine', x = 6550, z = 580, facing = 2, {cmdID = planetUtilities.COMMAND.RAW_MOVE, pos = {500, 3500}, options = {"shift"}}, },
+						{ name = 'euf_marine', x = 6500, z = 560, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6730, 840}},	}, },
+						{ name = 'euf_marine', x = 6550, z = 580, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6745, 860}},	}, },
+						{ name = 'euf_marine', x = 5400, z = 870, facing = 0, },
+						{ name = 'euf_marine', x = 5420, z = 910, facing = 0, },								
 					}
 				},
 				{
@@ -371,11 +380,17 @@ local function GetPlanet(planetUtilities, planetID)
 					allyTeam = 1,
 					commander = false,
 					startUnits = {
-						{ name = 'tc_ghoul', x = 543, z = 328, facing = 0, },
+						{ name = 'tc_belial_mis', x = 5300, z = 890, facing = 1, },
+						{ name = 'tc_spiderdemon', x = 5400, z = 1150, facing = 1, },						
+						{ name = 'tc_ghoul', x = 5745, z = 200, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6266, 1750}},	}, },
+						{ name = 'tc_ghoul', x = 5765, z = 180, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6280, 1750}},	}, },
+						{ name = 'tc_ghoul', x = 6266, z = 1750, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6650, 170}},	}, },
+						{ name = 'tc_ghoul', x = 6280, z = 1720, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6630, 180}},	}, },						
+		
 					},
 					midgameUnits = {
-						{	name = "tc_ghoul",	x = 7600, z = 850, facing = 0, spawnRadius = 0, delay = 4*30, orbitalDrop = false, },
-						{	name = "tc_ghoul",	x = 7600, z = 870, facing = 2, spawnRadius = 0, delay = 5*30, orbitalDrop = false, },						
+						{ name = 'tc_ghoul', x = 7290, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
+						{ name = 'tc_ghoul', x = 7290, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
 					},					
 				},
 			},
@@ -400,19 +415,29 @@ local function GetPlanet(planetUtilities, planetID)
 				position = {2450, 50, 2450 + 550, 50 + 550}, 
 				height = 400,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
-			},	
+			},
+			
 			{
 				terraformShape = planetUtilities.TERRAFORM_SHAPE.RECTANGLE,
 				terraformType = planetUtilities.TERRAFORM_TYPE.LEVEL,
-				position = {4900, 0, 4900 + 75, 1500}, 
+				position = {4900, 0, 4900 + 75, 785}, 
 				height = 400,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
 			},
 			{
 				terraformShape = planetUtilities.TERRAFORM_SHAPE.RECTANGLE,
+				terraformType = planetUtilities.TERRAFORM_TYPE.LEVEL,
+				position = {4900, 980, 4900 + 75, 1550}, 
+				height = 400,
+				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
+			},			
+			
+			
+			{ -- street
+				terraformShape = planetUtilities.TERRAFORM_SHAPE.RECTANGLE,
 				terraformType = planetUtilities.TERRAFORM_TYPE.RAISE,
-				position = {5800, 830, 6930, 890}, 
-				height = 2,
+				position = {5800, 830, 6894, 890}, 
+				height = 1,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.NONE,
 			},	
 			{
@@ -421,10 +446,10 @@ local function GetPlanet(planetUtilities, planetID)
 				width = 100,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
 			},
-			{
+			{ -- CRATER
 				terraformShape = planetUtilities.TERRAFORM_SHAPE.RAMP,
-				position = {2680, 1050, 400, 2680, 1770, 565}, 
-				width = 100,
+				position = {2680, 380, 970, 2680, 565, 1770}, 
+				width = 150,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
 			},			
 		},

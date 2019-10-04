@@ -67,7 +67,9 @@ local function GetPlanet(planetUtilities, planetID)
 								color = "green"
 							},
 						},
-					},					
+					},
+						
+					{ name = 'emit_fire', x = 2605, z = 770, facing = 0, },						
 				},
 				midgameUnits = {
 --					{	name = "euf_transport_mis",	x = 800, z = 3600, facing = 0, spawnRadius = 0, delay = 4*30, orbitalDrop = false, },
@@ -112,13 +114,15 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'bld_door', x = 2313, z = 379, facing = 0, },
 					{ name = 'bld_door', x = 7688, z = 146, facing = 0, },
 					
-					{ name = 'bld_gate', x = 7342, z = 860, facing = 3, },
-					{ name = 'wall_pillar2', x = 7300, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7300, z = 905, facing = 2, },	
-					{ name = 'wall_pillar2', x = 7250, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7250, z = 905, facing = 2, },
-					{ name = 'wall_pillar2', x = 7200, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7200, z = 905, facing = 2, },					
+					{ name = 'artower_open', x = 7350, z = 860, facing = 3, },	
+					{ name = 'bld_gate', x = 7200, z = 860, facing = 3, },
+					
+					{ name = 'wall_pillar2', x = 7240, z = 815, facing = 0, },
+					{ name = 'wall_pillar2', x = 7240, z = 905, facing = 2, },	
+					{ name = 'wall_pillar2', x = 7210, z = 815, facing = 0, },
+					{ name = 'wall_pillar2', x = 7210, z = 905, facing = 2, },
+					{ name = 'wall_pillar2', x = 7180, z = 815, facing = 0, },
+					{ name = 'wall_pillar2', x = 7180, z = 905, facing = 2, },					
 					{ name = 'wall_pillar2', x = 7150, z = 815, facing = 0, },
 					{ name = 'wall_pillar2', x = 7150, z = 905, facing = 2, },					
 
@@ -368,7 +372,7 @@ local function GetPlanet(planetUtilities, planetID)
 						{ name = 'euf_marine', x = 6500, z = 560, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6730, 840}},	}, },
 						{ name = 'euf_marine', x = 6550, z = 580, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6745, 860}},	}, },
 						{ name = 'euf_marine', x = 5400, z = 870, facing = 0, },
-						{ name = 'euf_marine', x = 5420, z = 910, facing = 0, },								
+						{ name = 'euf_marine', x = 5420, z = 910, facing = 0, },		
 					}
 				},
 				{
@@ -440,9 +444,9 @@ local function GetPlanet(planetUtilities, planetID)
 				height = 1,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.NONE,
 			},	
-			{
+			{ -- entrance
 				terraformShape = planetUtilities.TERRAFORM_SHAPE.RAMP,
-				position = {6870, 500, 860, 7350, 375, 860}, 
+				position = {6870, 500, 860, 7208, 425, 860}, 
 				width = 100,
 				volumeSelection = planetUtilities.TERRAFORM_VOLUME.LOWER_ONLY,
 			},

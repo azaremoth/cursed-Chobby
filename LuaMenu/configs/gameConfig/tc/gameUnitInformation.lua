@@ -150,7 +150,10 @@ local nameList = {
 	[149] = 'euf_techcenter_nuke',
 	[150] = 'tc_altar_hellstorm',
 	[151] = 'tc_soulstone',	
-	[152] = 'euf_constructor_mis',	
+	[152] = 'euf_constructor_mis',
+	[153] = 'tc_belial_mis',	
+	[154] = 'euf_marine_mis',
+	[155] = 'emit_fire',		
 }
 
 local categories = {

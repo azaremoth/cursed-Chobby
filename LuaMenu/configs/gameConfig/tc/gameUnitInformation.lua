@@ -152,8 +152,7 @@ local nameList = {
 	[151] = 'tc_soulstone',	
 	[152] = 'euf_constructor_mis',
 	[153] = 'tc_belial_mis',	
-	[154] = 'euf_marine_mis',
-	[155] = 'emit_fire',		
+	[154] = 'euf_marine_mis',	
 }
 
 local categories = {

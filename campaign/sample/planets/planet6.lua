@@ -69,7 +69,9 @@ local function GetPlanet(planetUtilities, planetID)
 						},
 					},
 						
-					{ name = 'emit_fire', x = 2605, z = 770, facing = 0, },						
+					{ name = 'emit_fire', x = 7100, z = 1000, facing = 0, },
+					{ name = 'emit_fire', x = 7200, z = 720, facing = 0, },
+					{ name = 'noemit_high', x = 7370, z = 860, facing = 0, },					
 				},
 				midgameUnits = {
 --					{	name = "euf_transport_mis",	x = 800, z = 3600, facing = 0, spawnRadius = 0, delay = 4*30, orbitalDrop = false, },
@@ -114,7 +116,7 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'bld_door', x = 2313, z = 379, facing = 0, },
 					{ name = 'bld_door', x = 7688, z = 146, facing = 0, },
 					
-					{ name = 'artower_open', x = 7350, z = 860, facing = 3, },	
+					{ name = 'artower_open', x = 7370, z = 860, facing = 3, },	
 					{ name = 'bld_gate', x = 7200, z = 860, facing = 3, },
 					
 					{ name = 'wall_pillar2', x = 7240, z = 815, facing = 0, },
@@ -126,7 +128,7 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'wall_pillar2', x = 7150, z = 815, facing = 0, },
 					{ name = 'wall_pillar2', x = 7150, z = 905, facing = 2, },					
 
-					{ name = 'buildingmodule_lvl5_8', x = 2675, z = 1260, facing = 1, },
+--					{ name = 'buildingmodule_lvl3_8', x = 2675, z = 1260, facing = 1, },
 					
 					{ name = 'bld_tunnel_high', x = 6060, z = 860, facing = 0, },
 					{ name = 'bld_tunnel_high', x = 6294, z = 860, facing = 0, },
@@ -356,8 +358,8 @@ local function GetPlanet(planetUtilities, planetID)
 
 					{ name = 'wall_pillar1', x = 4920, z = 780, facing = 2, },
 					{ name = 'wall_pillar1', x = 4952, z = 780, facing = 2, },
-					{ name = 'wall_pillar1', x = 4920, z = 965, facing = 0, },
-					{ name = 'wall_pillar1', x = 4952, z = 965, facing = 0, },					
+					{ name = 'wall_pillar1', x = 4920, z = 968, facing = 0, },
+					{ name = 'wall_pillar1', x = 4952, z = 968, facing = 0, },					
 			},		
 
 			aiConfig = {
@@ -385,7 +387,13 @@ local function GetPlanet(planetUtilities, planetID)
 					commander = false,
 					startUnits = {
 						{ name = 'tc_belial_mis', x = 5300, z = 890, facing = 1, },
-						{ name = 'tc_spiderdemon', x = 5400, z = 1150, facing = 1, },						
+						{ name = 'tc_spiderdemon', x = 5400, z = 1150, facing = 1, },
+
+						{ name = 'tc_tower', x = 4600, z = 2150, facing = 1, },
+						{ name = 'tc_tower', x = 3995, z = 2410, facing = 1, },
+						{ name = 'tc_tower', x = 3565, z = 2761, facing = 1, },
+						{ name = 'tc_tower', x = 3114, z = 3249, facing = 1, },
+
 						{ name = 'tc_ghoul', x = 5745, z = 200, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6266, 1750}},	}, },
 						{ name = 'tc_ghoul', x = 5765, z = 180, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6280, 1750}},	}, },
 						{ name = 'tc_ghoul', x = 6266, z = 1750, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6650, 170}},	}, },

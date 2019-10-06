@@ -71,7 +71,8 @@ local function GetPlanet(planetUtilities, planetID)
 						
 					{ name = 'emit_fire', x = 7100, z = 1000, facing = 0, },
 					{ name = 'emit_fire', x = 7200, z = 720, facing = 0, },
-					{ name = 'noemit_high', x = 7370, z = 860, facing = 0, },					
+					{ name = 'noemit_high', x = 7370, z = 860, facing = 0, },
+					{ name = 'emit_smoke_high', x = 7371, z = 860, facing = 0, },						
 				},
 				midgameUnits = {
 --					{	name = "euf_transport_mis",	x = 800, z = 3600, facing = 0, spawnRadius = 0, delay = 4*30, orbitalDrop = false, },

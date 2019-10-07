@@ -22,7 +22,7 @@ local function GetPlanet(planetUtilities, planetID)
 			size = planetUtilities.PLANET_SIZE_INFO,
 			backgroundImage = planetUtilities.backgroundImages[math.floor(math.random()*#planetUtilities.backgroundImages) + 1],
 			terrainType = "Desert",
-			radius = "10200 km",
+			radius = "7650 km",
 			primary = "Zeta Aurigae",
 			primaryType = "MV",
 			milRating = 1,

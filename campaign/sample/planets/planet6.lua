@@ -13,7 +13,7 @@ local function GetPlanet(planetUtilities, planetID)
 			x = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][1]) or 1.00,
 			y = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][2]) or 1.00,
 			image = image,
-			size = planetUtilities.PLANET_SIZE_MAP*0.26,
+			size = planetUtilities.PLANET_SIZE_MAP*0.34,
 			hintText = "Click this planet to begin.",
 			hintSize = {400, 100}, -- Size of the hint box
 		},
@@ -69,10 +69,9 @@ local function GetPlanet(planetUtilities, planetID)
 						},
 					},
 						
-					{ name = 'emit_fire', x = 7100, z = 1000, facing = 0, },
-					{ name = 'emit_fire', x = 7200, z = 720, facing = 0, },
-					{ name = 'noemit_high', x = 7370, z = 860, facing = 0, },
-					{ name = 'emit_smoke_high', x = 7371, z = 860, facing = 0, },						
+--					{ name = 'emit_fire', x = 7100, z = 1000, facing = 0, },
+--					{ name = 'emit_fire', x = 7200, z = 720, facing = 0, },
+--					{ name = 'noemit_high', x = 7370, z = 860, facing = 0, },						
 				},
 				midgameUnits = {
 --					{	name = "euf_transport_mis",	x = 800, z = 3600, facing = 0, spawnRadius = 0, delay = 4*30, orbitalDrop = false, },
@@ -117,7 +116,7 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'bld_door', x = 2313, z = 379, facing = 0, },
 					{ name = 'bld_door', x = 7688, z = 146, facing = 0, },
 					
-					{ name = 'artower_open', x = 7370, z = 860, facing = 3, },	
+--					{ name = 'artower_open', x = 7370, z = 860, facing = 3, },	
 					{ name = 'bld_gate', x = 7200, z = 860, facing = 3, },
 					
 					{ name = 'wall_pillar2', x = 7240, z = 815, facing = 0, },
@@ -375,7 +374,8 @@ local function GetPlanet(planetUtilities, planetID)
 						{ name = 'euf_marine', x = 6500, z = 560, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6730, 840}},	}, },
 						{ name = 'euf_marine', x = 6550, z = 580, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6745, 860}},	}, },
 						{ name = 'euf_marine', x = 5400, z = 870, facing = 0, },
-						{ name = 'euf_marine', x = 5420, z = 910, facing = 0, },		
+						{ name = 'euf_marine', x = 5420, z = 910, facing = 0, },
+						{ name = 'artower', x = 7371, z = 860, facing = 0, },
 					}
 				},
 				{
@@ -402,8 +402,8 @@ local function GetPlanet(planetUtilities, planetID)
 		
 					},
 					midgameUnits = {
-						{ name = 'tc_ghoul', x = 7290, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
-						{ name = 'tc_ghoul', x = 7290, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
+						{ name = 'tc_ghoul', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
+						{ name = 'tc_ghoul', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
 					},					
 				},
 			},

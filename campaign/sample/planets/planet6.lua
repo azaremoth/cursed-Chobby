@@ -115,20 +115,8 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'bighouse', x = 7983, z = 1201, facing = 0, },
 					{ name = 'bld_door', x = 2313, z = 379, facing = 0, },
 					{ name = 'bld_door', x = 7688, z = 146, facing = 0, },
-					
---					{ name = 'artower_open', x = 7370, z = 860, facing = 3, },	
-					{ name = 'bld_gate', x = 7200, z = 860, facing = 3, },
-					
-					{ name = 'wall_pillar2', x = 7240, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7240, z = 905, facing = 2, },	
-					{ name = 'wall_pillar2', x = 7210, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7210, z = 905, facing = 2, },
-					{ name = 'wall_pillar2', x = 7180, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7180, z = 905, facing = 2, },					
-					{ name = 'wall_pillar2', x = 7150, z = 815, facing = 0, },
-					{ name = 'wall_pillar2', x = 7150, z = 905, facing = 2, },					
 
---					{ name = 'buildingmodule_lvl3_8', x = 2675, z = 1260, facing = 1, },
+					{ name = 'bld_gate_open', x = 7190, z = 860, facing = 3, },
 					
 					{ name = 'bld_tunnel_high', x = 6060, z = 860, facing = 0, },
 					{ name = 'bld_tunnel_high', x = 6294, z = 860, facing = 0, },
@@ -382,9 +370,7 @@ local function GetPlanet(planetUtilities, planetID)
 					{ name = 'barrels', x = 7189, z = 3088, facing = 0, },
 					{ name = 'box', x = 7125, z = 2779, facing = 0, },
 					{ name = 'boxes', x = 7084, z = 2790, facing = 0, },
-					{ name = 'containertype3', x = 7029, z = 3080, facing = 0, },
-					
-					
+					{ name = 'containertype3', x = 7029, z = 3080, facing = 0, },		
 					
 			},		
 
@@ -397,6 +383,17 @@ local function GetPlanet(planetUtilities, planetID)
 					allyTeam = 0,
 					unlocks = {	},
 					startUnits = {
+					
+						{ name = 'trails1', x = 5368, z = 888, facing = 3, },
+						{ name = 'trails2', x = 6280, z = 1956, facing = 0, },
+						{ name = 'trails2', x = 6655, z = 2850, facing = 0, },						
+						{ name = 'trails3', x = 4344, z = 952, facing = 3, },
+						{ name = 'trails3', x = 6136, z = 1576, facing = 0, },
+						{ name = 'trails4', x = 3192, z = 2136, facing = 0, },
+						{ name = 'trails4', x = 4808, z = 3176, facing = 0, },
+
+					
+					
 						{ name = 'euf_marine', x = 6500, z = 560, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6730, 840}},	}, },
 						{ name = 'euf_marine', x = 6550, z = 580, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6745, 860}},	}, },
 						{ name = 'euf_marine', x = 5400, z = 870, facing = 0, },
@@ -440,19 +437,19 @@ local function GetPlanet(planetUtilities, planetID)
 						{ name = 'euf_wall', x = 5768, z = 2376, facing = 0, },
 						{ name = 'euf_wall', x = 5784, z = 2360, facing = 1, },
 						
-						{ name = 'euf_marine_mis', x = 6814, z = 2914, facing = 2, },
-						{ name = 'euf_marine_mis', x = 6837, z = 2897, facing = 2, },
-						{ name = 'euf_marine_mis', x = 6869, z = 2892, facing = 2, },						
-						{ name = 'euf_wall', x = 6792, z = 2904, facing = 0, },
-						{ name = 'euf_wall', x = 6792, z = 2920, facing = 1, },
-						{ name = 'euf_wall', x = 6808, z = 2888, facing = 2, },
-						{ name = 'euf_wall', x = 6808, z = 2936, facing = 3, },
-						{ name = 'euf_wall', x = 6824, z = 2872, facing = 0, },
-						{ name = 'euf_wall', x = 6824, z = 2952, facing = 1, },
-						{ name = 'euf_wall', x = 6840, z = 2872, facing = 2, },
-						{ name = 'euf_wall', x = 6856, z = 2872, facing = 3, },
-						{ name = 'euf_wall', x = 6872, z = 2872, facing = 0, },
-						{ name = 'euf_wall', x = 6888, z = 2888, facing = 1, },
+						{ name = 'euf_marine_mis', x = 6814, z = 2814, facing = 2, },
+						{ name = 'euf_marine_mis', x = 6837, z = 2797, facing = 2, },
+						{ name = 'euf_marine_mis', x = 6869, z = 2792, facing = 2, },						
+						{ name = 'euf_wall', x = 6792, z = 2804, facing = 0, },
+						{ name = 'euf_wall', x = 6792, z = 2820, facing = 1, },
+						{ name = 'euf_wall', x = 6808, z = 2788, facing = 2, },
+						{ name = 'euf_wall', x = 6808, z = 2836, facing = 3, },
+						{ name = 'euf_wall', x = 6824, z = 2772, facing = 0, },
+						{ name = 'euf_wall', x = 6824, z = 2852, facing = 1, },
+						{ name = 'euf_wall', x = 6840, z = 2772, facing = 2, },
+						{ name = 'euf_wall', x = 6856, z = 2772, facing = 3, },
+						{ name = 'euf_wall', x = 6872, z = 2772, facing = 0, },
+						{ name = 'euf_wall', x = 6888, z = 2788, facing = 1, },
 
 					}
 				},
@@ -480,8 +477,8 @@ local function GetPlanet(planetUtilities, planetID)
 		
 					},
 					midgameUnits = {
-						{ name = 'tc_ghoul', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
-						{ name = 'tc_ghoul', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_melee', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
 					},					
 				},
 			},

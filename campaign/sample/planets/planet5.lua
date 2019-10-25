@@ -50,12 +50,6 @@ local function GetPlanet(planetUtilities, planetID)
 						z = 2100,
 						facing = 0,
 					},
-					{
-						name = "euf_priest",
-						x = 7330,
-						z = 2050,
-						facing = 0,
-					},
 				}
 			},
 			modoptions = {
@@ -68,7 +62,24 @@ local function GetPlanet(planetUtilities, planetID)
 					startZ = 6200,
 					startMetal = 1000,
 					startEnergy = 1000,					
-					aiLib = "NOX AI",
+					aiLib = "NO AI",
+					humanName = "Ally",
+					unlocks = {},
+					allyTeam = 0,
+					commander = false,
+					startUnits = {
+						{ name = "converter", x = 7000, z = 3010, facing = 0, },					
+						{ name = "euf_priest", x = 7000, z = 3000, facing = 0, },
+			
+					}
+				},			
+			
+				{
+					startX = 1900,
+					startZ = 6200,
+					startMetal = 1000,
+					startEnergy = 1000,					
+					aiLib = "NO AI",
 					humanName = "Enemy",
 					unlocks = {},
 					allyTeam = 1,

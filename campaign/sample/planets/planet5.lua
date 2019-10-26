@@ -53,13 +53,27 @@ local function GetPlanet(planetUtilities, planetID)
 				}
 			},
 			modoptions = {
---				integral_disable_defence = 1,
---				integral_disable_special = 1,
 			},
+			initialWrecks = {			
+				{ name = 'obelisk', x = 4404, z = 1833, facing = 0, },
+				{ name = 'obelisk', x = 4315, z = 2103, facing = 0, },
+				{ name = 'obelisk', x = 4315, z = 1993, facing = 0, },
+				{ name = 'obelisk', x = 4204, z = 2106, facing = 0, },
+				{ name = 'obelisk', x = 4202, z = 2000, facing = 0, },
+				{ name = 'obelisk', x = 4105, z = 1838, facing = 0, },
+				{ name = 'landingpad', x = 3826, z = 2219, facing = 0, },
+				{ name = 'boxes', x = 3780, z = 2126, facing = 0, },
+				{ name = 'box', x = 3931, z = 2289, facing = 0, },
+				{ name = 'box', x = 3820, z = 2294, facing = 0, },
+				{ name = 'barrels', x = 3902, z = 2273, facing = 0, },
+				{ name = 'barrel', x = 3851, z = 2292, facing = 0, },
+				{ name = 'barrel', x = 3764, z = 2160, facing = 0, },
+				{ name = 'barrel', x = 3755, z = 2174, facing = 0, },
+			},			
 			aiConfig = {
 				{
-					startX = 1900,
-					startZ = 6200,
+					startX = 4200,
+					startZ = 2000,
 					startMetal = 1000,
 					startEnergy = 1000,					
 					aiLib = "NO AI",
@@ -68,12 +82,14 @@ local function GetPlanet(planetUtilities, planetID)
 					allyTeam = 0,
 					commander = false,
 					startUnits = {
-						{ name = "converter", x = 7000, z = 3010, facing = 0, },					
-						{ name = "euf_priest", x = 7000, z = 3000, facing = 0, },
-			
+						{ name = "converter", x = 4120, z = 2050, facing = 0, },					
+						{ name = 'euf_sanctum', x = 3928, z = 2024, facing = 1, },
+						{ name = 'euf_priest', x = 4263, z = 2101, facing = 0, },
+						{ name = 'euf_paladin', x = 4315, z = 2135, facing = 0, },
+						{ name = 'euf_paladin', x = 4205, z = 2140, facing = 0, },
+						{ name = 'euf_church', x = 4256, z = 1840, facing = 0, },
 					}
 				},			
-			
 				{
 					startX = 1900,
 					startZ = 6200,
@@ -85,6 +101,7 @@ local function GetPlanet(planetUtilities, planetID)
 					allyTeam = 1,
 					commander = false,
 					startUnits = {
+						{ name = "spawner", x = 5100, z = 2000, facing = 0, },				
 						{ name = "euf_walker", x = 1900, z = 6200, facing = 0, commands = {{cmdID = planetUtilities.COMMAND.PATROL, pos = {3300, 5600}}, }, },
 						{ name = "euf_marine", x = 1930, z = 6220, facing = 0, commands = {{cmdID = planetUtilities.COMMAND.PATROL, pos = {7300, 2100}}, }, },
 						{ name = "euf_marine", x = 1950, z = 6240, facing = 0, commands = {{cmdID = planetUtilities.COMMAND.PATROL, pos = {7300, 2100}}, }, },			

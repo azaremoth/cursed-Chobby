@@ -28,7 +28,7 @@ local function GetPlanet(planetUtilities, planetID)
 			primaryType = "MV",
 			milRating = 1,
 --			feedbackLink = "http://zero-k.info/Forum/Thread/24417",
-			text = [[The Xenosects are slowly becoming real trouble on this planet. They are damaging vital infrastructure. It is time to eredicate the vermin, Exterminator!]]
+			text = [[The Xenosects are slowly becoming real trouble on this planet. I hate those bugs! They are starting to damage vital infrastructure. So, let's play exterminator!]]
 		},
 		tips = {
 			{

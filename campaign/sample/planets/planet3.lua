@@ -43,6 +43,7 @@ local function GetPlanet(planetUtilities, planetID)
 				extraUnlocks = {},
 				commander = false,
 				startUnits = {
+					{ 	name = 'euf_sarge', x = 230, z = 1800, facing = 1, },				
 					{	name = "euf_transport_mis",	x = 300, z = 1850, facing = 1,  },
 				},
 				midgameUnits = {},

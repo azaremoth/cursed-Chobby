@@ -28,7 +28,7 @@ local function GetPlanet(planetUtilities, planetID)
 			primaryType = "MV",
 			milRating = 1,
 --			feedbackLink = "http://zero-k.info/Forum/Thread/24417",
-			text = [[Separatists are hiding here. Construct a base and destroy them without wasting time! Our presence will not be known quickly...]]		},
+			text = [[Those separatists are hiding here. We will construct a base and crush them without wasting time! Our presence will be discovered quickly...]]		},
 		tips = {		},
 		gameConfig = {
 			mapName = "Ravaged_v2",

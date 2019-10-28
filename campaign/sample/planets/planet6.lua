@@ -13,7 +13,7 @@ local function GetPlanet(planetUtilities, planetID)
 			x = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][1]) or 1.00,
 			y = (planetUtilities.planetPositions and planetUtilities.planetPositions[planetID][2]) or 1.00,
 			image = image,
-			size = planetUtilities.PLANET_SIZE_MAP*0.34,
+			size = planetUtilities.PLANET_SIZE_MAP*0.4,
 			hintText = "Click this planet to begin.",
 			hintSize = {400, 100}, -- Size of the hint box
 		},
@@ -27,11 +27,11 @@ local function GetPlanet(planetUtilities, planetID)
 			primaryType = "Sol",
 			milRating = 1,
 --			feedbackLink = "http://zero-k.info/Forum/Thread/24417",
-			text = [[Something is terribly wrong here! We were called to support a "clean-up mission" because of some sort of wierd failed experiments. However, this Mars station is filled to the top with demonic creatures and there is no way to stop them here. We need to get to the airport and hope for evacuation!]]
+			text = [[Something is terribly wrong here! We were called to support a "clean-up mission" because of some sort of wierd failed experiment. However, this Mars station is filled to the top with foul creatures and there is no way to stop them here. We need to get to the airport and hope for evacuation!]]
 		},
 		tips = {
 			{
-				image = "unitpics/tc_ghoul.png",
+				image = "unitpics/tc_lich.png",
 				text = [[An unknown enemy entered the battleground.]]
 			},		
 		},		

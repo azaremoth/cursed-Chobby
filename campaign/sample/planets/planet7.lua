@@ -28,7 +28,7 @@ local function GetPlanet(planetUtilities, planetID)
 			primaryType = "G8V",
 			milRating = 1,
 --			feedbackLink = "http://zero-k.info/Forum/Thread/24417",
-			text = [[The Cursed found an anomaly on this planet. We expect them to tear another hell rift into our realm. This can not happen! Capture and hold the anomaly.]]		},
+			text = [[The undead Cursed have found an anomaly on this planet. We expect them to tear another hell rift into our realm. This can not happen! Capture and hold the anomaly.]]		},
 		tips = {		},
 		gameConfig = {
 			mapName = "Titan v3.1",

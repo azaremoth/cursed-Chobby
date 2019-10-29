@@ -444,8 +444,13 @@ local function GetPlanet(planetUtilities, planetID)
 						{ name = 'euf_wall', x = 6856, z = 2772, facing = 3, },
 						{ name = 'euf_wall', x = 6872, z = 2772, facing = 0, },
 						{ name = 'euf_wall', x = 6888, z = 2788, facing = 1, },
-
-					}
+					},
+					midgameUnits = {
+						{ name = 'euf_marine', x = 7000, z = 2806, facing = 3, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {6800, 860}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },
+						{ name = 'euf_marine', x = 7000, z = 2856, facing = 3, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {6800, 860}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },						
+						{ name = 'euf_marine', x = 7048, z = 2806, facing = 3, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {6800, 860}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },
+						{ name = 'euf_marine', x = 7048, z = 2856, facing = 3, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {6800, 860}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },							
+					},
 				},
 				{
 					startX = 4000,
@@ -457,7 +462,7 @@ local function GetPlanet(planetUtilities, planetID)
 					commander = false,
 					startUnits = {
 					
-						{ name = 'spawner_ghoul', x = 6275, z = 1750, facing = 1, },
+						{ name = 'spawner_ghoul', x = 6275, z = 1950, facing = 1, },
 					
 						{ name = 'tc_belial_mis', x = 5300, z = 890, facing = 1, },
 						{ name = 'tc_spiderdemon', x = 5400, z = 1150, facing = 1, },
@@ -472,6 +477,8 @@ local function GetPlanet(planetUtilities, planetID)
 						{ name = 'tc_ghoul', x = 6266, z = 1750, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6650, 170}},	}, },
 						{ name = 'tc_undeadmarine_melee', x = 6280, z = 1720, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {6630, 180}},	}, },						
 
+						{ name = 'tc_undeadmarine_melee', x = 6275, z = 1680, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {5690, 2500}},	}, },
+						{ name = 'tc_undeadmarine_gun', x = 6275, z = 1680, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {5690, 2500}},	}, },
 						{ name = 'tc_undeadmarine_melee', x = 6275, z = 1690, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {5690, 2500}},	}, },
 						{ name = 'tc_undeadmarine_melee', x = 6275, z = 1670, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {5690, 2500}},	}, },
 						{ name = 'tc_undeadmarine_gun', x = 6295, z = 1690, facing = 0, commands = { {cmdID = planetUtilities.COMMAND.PATROL, pos = {5690, 2500}},	}, },
@@ -481,7 +488,18 @@ local function GetPlanet(planetUtilities, planetID)
 					},
 					midgameUnits = {
 						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 5*30, orbitalDrop = false,  },
-						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },									
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 10*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 40*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 40*30, orbitalDrop = false,  },				
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 50*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 50*30, orbitalDrop = false,  },	
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 60*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 70*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 70*30, orbitalDrop = false,  },	
+						{ name = 'tc_undeadmarine_melee', x = 7090, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 80*30, orbitalDrop = false,  },
+						{ name = 'tc_undeadmarine_gun', x = 7070, z = 860, facing = 2, commands = { {cmdID = planetUtilities.COMMAND.FIGHT, pos = {5360, 900}},	}, spawnRadius = 0, delay = 80*30, orbitalDrop = false,  },	
+						
 					},					
 				},
 			},

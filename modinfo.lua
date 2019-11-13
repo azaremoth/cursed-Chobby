@@ -9,6 +9,7 @@ return {
   modtype = 5,
   onlyLocal = true,
   depend = {
-      'Chobby $VERSION',
+        'rapid://chobby:test',
+ --     'Chobby $VERSION',
   },
 }

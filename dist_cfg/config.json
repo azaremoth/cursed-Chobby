@@ -22,12 +22,12 @@
           "display": "Dev Lobby"
       },
       "downloads": {
-          "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
+          "games" : ["tc:test", "chobby:test", "cursed-chobby:test"],	  
+          "engines" : [ "104.0.1-1435-g79d77ca maintenance" ]
       },
       "no_start_script" : true,
-      "no_downloads" : true,
       "launch": {
-        "start_args" : ["--menu", "Cursed Chobby $VERSION"]
+      "start_args" : ["--menu", "rapid://cursed-chobby:test"]
       }
     }
   ]

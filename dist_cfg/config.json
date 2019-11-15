@@ -15,21 +15,6 @@
       "launch": {
       "start_args" : ["--menu", "rapid://cursed-chobby:test"]
        }
-    },
-    {
-      "package": {
-          "id": "dev-lobby",
-          "display": "Dev Lobby"
-      },
-      "downloads": {
-          "games" : ["tc:test", "chobby:test", "cursed-chobby:test"],	  
-          "engines" : [ "104.0.1-1435-g79d77ca maintenance" ]
-      },
-      "no_start_script" : true,
-      "launch": {
-      "start_args" : ["--menu", "rapid://cursed-chobby:test"]
-      }
     }
   ]
-
 }

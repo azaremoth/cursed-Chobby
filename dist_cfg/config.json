@@ -7,13 +7,13 @@
           "display": "Stable"
       },
       "downloads": {
-          "games" : ["tc:stable", "chobby:test", "cursed-chobby:test"],
+          "games" : ["tc:stable", "chobby:test", "tchobby:test"],
           "engines" : [ "104.0.1-1445-g04e4ef8 maintenance" ],		  
 		  "maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "Wanderlust v03"]
       },
       "no_start_script" : true,
       "launch": {
-      "start_args" : ["--menu", "rapid://cursed-chobby:test"]
+      "start_args" : ["--menu", "rapid://tchobby:test"]
        }
     }
   ]

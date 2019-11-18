@@ -1,62 +1,20 @@
 {
-    "title" : "Evolution RTS",
-    "setups" : [
-        {
-            "package": {
-                "id": "stable",
-                "display": "Stable"
-            },
-            "downloads": {
-                "games" : ["spring-features:stable", "evo:stable", "chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
-            }
-        },
-        {
-            "package": {
-                "id": "test",
-                "display": "Test"
-            },
-            "downloads": {
-                "games" : ["spring-features:stable", "evo:test", "chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
-            }
-        },
-        {
-            "package": {
-                "id": "test-portable",
-                "display": "Portable",
-                "portable": true
-            },
-            "downloads": {
-                "games" : ["evo:test", "chobby:test", "evo-chobby:test"],
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "launch": {
-                "start_args" : ["--menu", "rapid://evo-chobby:test"]
-            }
-        },
-        {
-            "package": {
-                "id": "dev-lobby",
-                "display": "Dev Lobby"
-            },
-            "downloads": {
-                "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
-            },
-            "no_start_script" : true,
-            "no_downloads" : true,
-            "launch": {
-                "start_args" : ["--menu", "EvoRTS Chobby $VERSION"]
-            }
-        }
-    ]
+  "title" : "The Cursed",
+  "setups" : [
+    {
+      "package": {
+          "id": "stable",
+          "display": "Stable"
+      },
+      "downloads": {
+          "games" : ["tc:stable", "chobby:test", "tchobby:test"],
+          "engines" : [ "104.0.1-1432-gba1702d maintenance" ],		  
+		  "maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "Wanderlust v03"]
+      },
+      "no_start_script" : true,
+      "launch": {
+      "start_args" : ["--menu", "rapid://tchobby:test"]
+       }
+    }
+  ]
 }

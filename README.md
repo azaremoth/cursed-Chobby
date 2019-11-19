@@ -1,1 +1,1 @@
-# cursed-chobby
+# Config files for Launcher

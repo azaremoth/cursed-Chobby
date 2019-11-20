@@ -18,20 +18,8 @@
             }
         },
         {
-            "package": {
-                "id": "instant",
-                "display": "Start only"
-            },
-            "downloads": {},
-            "no_start_script" : true,
-            "no_downloads" : true,
-            "launch": {
-            "start_args" : ["--menu", "rapid://tchobby:test"]
-            }
-        },
-        {
 		  "package": {
-			  "id": "stable",
+			  "id": "dev",
 			  "display": "Dev",
               "portable": true			  
 		  },

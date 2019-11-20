@@ -4,8 +4,7 @@
     {
       "package": {
           "id": "stable",
-          "display": "Portable",
-		  "portable": true
+          "display": "Test"
       },
       "downloads": {
           "games" : ["tc:stable", "chobby:test", "tchobby:test"],

@@ -1,20 +1,47 @@
 {
   "title" : "Cursed",
   "setups" : [
-    {
-      "package": {
-          "id": "stable",
-          "display": "Test"
-      },
-      "downloads": {
-          "games" : ["tc:stable", "chobby:test", "tchobby:test"],
-          "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ],		  
-		  "maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "Wanderlust v03"]
-      },
-      "no_start_script" : true,
-      "launch": {
-      "start_args" : ["--menu", "rapid://tchobby:test"]
-       }
-    }
-  ]
+		{
+		  "package": {
+			  "id": "stable",
+			  "display": "Update",
+              "portable": true			  
+		  },
+		  "downloads": {
+			  "games" : ["tc:stable", "chobby:test", "tchobby:stable"],
+			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ],		  
+			  "maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "Wanderlust v03"]
+		  },
+		  "no_start_script" : true,
+		  "launch": {
+		  "start_args" : ["--menu", "rapid://tchobby:test"]
+            }
+        },
+        {
+            "package": {
+                "id": "instant",
+                "display": "Start Now"
+            },
+            "downloads": {},
+            "no_start_script" : true,
+            "no_downloads" : true,
+            "launch": {
+            "start_args" : ["--menu", "rapid://tchobby:test"]
+            }
+        },
+        {
+		  "package": {
+			  "id": "stable",
+			  "display": "Update",
+              "portable": true			  
+		  },
+		  "downloads": {
+			  "games" : ["tc:test", "chobby:test", "tchobby:test"]
+		  },
+		  "no_start_script" : true,
+		  "launch": {
+		  "start_args" : ["--menu", "rapid://tchobby:test"]
+            }
+        }
+    ]
 }

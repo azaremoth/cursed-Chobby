@@ -14,13 +14,13 @@
 		  },
 		  "no_start_script" : true,
 		  "launch": {
-		  "start_args" : ["--menu", "rapid://tchobby:test"]
+		  "start_args" : ["--menu", "rapid://tchobby:stable"]
             }
         },
         {
             "package": {
                 "id": "instant",
-                "display": "Start Now"
+                "display": "Start only"
             },
             "downloads": {},
             "no_start_script" : true,
@@ -32,7 +32,7 @@
         {
 		  "package": {
 			  "id": "stable",
-			  "display": "Update",
+			  "display": "Dev",
               "portable": true			  
 		  },
 		  "downloads": {

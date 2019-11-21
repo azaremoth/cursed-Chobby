@@ -3,14 +3,13 @@
   "setups" : [
 		{
 		  "package": {
-			  "id": "stable",
-			  "display": "Update",
+			  "id": "test-portable",
+			  "display": "Stable",
               "portable": true			  
 		  },
 		  "downloads": {
 			  "games" : ["tc:stable", "chobby:test", "tchobby:stable"],
-			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ],		  
-			  "maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "Wanderlust v03"]
+			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
 		  },
 		  "no_start_script" : true,
 		  "launch": {
@@ -19,12 +18,13 @@
         },
         {
 		  "package": {
-			  "id": "dev",
-			  "display": "Dev",
+			  "id": "dev-lobby",
+			  "display": "Develop",
               "portable": true			  
 		  },
 		  "downloads": {
-			  "games" : ["tc:test", "chobby:test", "tchobby:test"]
+			  "games" : ["tc:test", "chobby:test", "tchobby:test"],
+			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
 		  },
 		  "no_start_script" : true,
 		  "launch": {

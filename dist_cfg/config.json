@@ -28,7 +28,7 @@
 		  },
 		  "no_start_script" : true,
 		  "launch": {
-		  "start_args" : ["--menu", "rapid://tchobby:test"]
+		  "start_args" : ["--menu", "tchobby $VERSION"]
             }
         }
     ]

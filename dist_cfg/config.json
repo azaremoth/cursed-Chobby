@@ -9,7 +9,7 @@
 		  },
 		  "downloads": {
 			  "games" : ["tc:stable", "chobby:test", "tchobby:stable"],
-			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
+			  "engines" : [ "104.0" ]
 		  },
 		  "no_start_script" : true,
 		  "launch": {
@@ -24,7 +24,7 @@
 		  },
 		  "downloads": {
 			  "games" : ["tc:test", "chobby:test", "tchobby:test"],
-			  "engines" : [ "104.0.1-1344-g07bdbaf maintenance" ]
+			  "engines" : [ "104.0" ]
 		  },
 		  "no_start_script" : true,
 		  "launch": {

@@ -16,20 +16,5 @@
 		  "start_args" : ["--menu", "rapid://tchobby:stable"]
             }
         },
-        {
-		  "package": {
-			  "id": "dev-lobby",
-			  "display": "Develop",
-              "portable": true			  
-		  },
-		  "downloads": {
-			  "games" : ["tc:test", "chobby:test", "tchobby:test"],
-			  "engines" : [ "104.0" ]
-		  },
-		  "no_start_script" : true,
-		  "launch": {
-		  "start_args" : ["--menu", "tchobby $VERSION"]
-            }
-        }
     ]
 }

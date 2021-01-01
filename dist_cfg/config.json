@@ -9,7 +9,7 @@
 		  },
 		  "downloads": {
 			  "games" : ["tc:stable", "chobby:test", "tchobby:stable", "tcampaign:stable"],
-			  "engines" : [ "104.0" ]
+			  "engines" : [ "105.0" ]
 		  },
 		  "no_start_script" : true,
 		  "launch": {
@@ -23,7 +23,7 @@
               "portable": true			  
 		  },
 		  "downloads": {
-			  "engines" : [ "104.0" ]
+			  "engines" : [ "105.0" ]
 		  },
 		  "no_start_script" : true,
           "no_downloads" : true,		  

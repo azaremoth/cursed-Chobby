@@ -5,7 +5,8 @@
 		  "package": {
 			  "id": "test-portable",
 			  "display": "Stable",
-              "portable": true			  
+			  "platform": "win32",
+			  "portable": true		  
 		  },
 		  "downloads": {
 			  "games" : ["tc:stable", "chobby:test", "tchobby:stable", "tcampaign:stable"],
@@ -19,14 +20,16 @@
 		  },
 		  "no_start_script" : true,
 		  "launch": {
-		  "start_args" : ["--menu", "rapid://tchobby:stable"]
+			  "start_args" : ["--menu", "rapid://tchobby:stable"],
+			  "engine": "105.0"
             }
         },
         {
 		  "package": {
 			  "id": "dev-lobby",
 			  "display": "Develop",
-              "portable": true			  
+			  "platform": "win32",
+			  "portable": true		  
 		  },
 		  "downloads": {
 			  "resources": [
@@ -40,7 +43,8 @@
 		  "no_start_script" : true,
           "no_downloads" : true,		  
 		  "launch": {
-		  "start_args" : ["--menu", "tchobby $VERSION"]
+			  "start_args" : ["--menu", "tchobby $VERSION"],
+			  "engine": "105.0"
             }
         }
     ]

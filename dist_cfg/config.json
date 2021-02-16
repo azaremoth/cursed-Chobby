@@ -2,13 +2,19 @@
   "title" : "Cursed",
   "setups" : [
 		{
-		  "package": {
+			"package": {
 			  "id": "test-portable",
 			  "display": "Stable",
 			  "platform": "win32",
 			  "portable": true		  
-		  },
-		  "downloads": {
+			},
+			"isolation": true,
+			"auto_download": false,
+			"auto_start": false,
+			"no_downloads": false,
+			"no_start_script": true,
+			"load_dev_exts": false,		  
+			"downloads": {
 			  "games" : ["tc:stable", "chobby:test", "tchobby:stable", "tcampaign:stable"],
 			  "resources": [
 					{
@@ -17,8 +23,7 @@
 					"extract": true
 					}
 				]
-		  },
-		  "no_start_script" : true,
+			},
 		  "launch": {
 			  "start_args" : ["--menu", "rapid://tchobby:stable"],
 			  "engine": "105.0"
@@ -31,7 +36,13 @@
 			  "platform": "win32",
 			  "portable": true		  
 		  },
-		  "downloads": {
+			"isolation": true,
+			"auto_download": false,
+			"auto_start": false,
+			"no_downloads": true,
+			"no_start_script": true,
+			"load_dev_exts": false,			  
+			"downloads": {
 			  "resources": [
 					{
 					"url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
@@ -39,10 +50,8 @@
 					"extract": true
 					}
 				]
-		  },
-		  "no_start_script" : true,
-          "no_downloads" : true,		  
-		  "launch": {
+			},		  
+			"launch": {
 			  "start_args" : ["--menu", "tchobby $VERSION"],
 			  "engine": "105.0"
             }

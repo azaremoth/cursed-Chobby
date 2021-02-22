@@ -23,28 +23,6 @@
 				"engine": "105.0"
             }
         },
-		{
-            "package": {
-                "id": "complete-linux",
-                "display": "Stable Linux",
-                "platform": "linux"
-            },
-            "downloads": {
-				"games" : ["tc:stable", "chobby:test", "tchobby:stable", "tcampaign:stable"],
-				"resources": [
-					{
-					"url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
-					"destination": "engine/105.0",
-					"extract": true
-					}
-                ]
-            },
-            "no_start_script" : true,
-            "launch": {
-				"start_args" : ["--menu", "rapid://tchobby:stable"],
-				"engine": "105.0"
-            }
-        },
         {
             "package": {
                 "id": "dev-lobby-windows",

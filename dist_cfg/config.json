@@ -44,7 +44,7 @@
 				"start_args" : ["--menu", "rapid://tchobby:stable"],
 				"engine": "105.0"
             }
-        },	
+        },
         {
             "package": {
                 "id": "dev-lobby-windows",
@@ -68,4 +68,5 @@
             }
         }
     ]
+
 }

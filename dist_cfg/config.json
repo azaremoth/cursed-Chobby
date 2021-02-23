@@ -3,8 +3,31 @@
   "setups" : [
 		{
             "package": {
+                "id": "complete-linux",
+                "display": "Stable",
+                "platform": "linux"
+            },
+            "downloads": {
+				"games" : ["chobby:test", "tchobby:stable", "tc:stable", "tcampaign:stable"],
+				"maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "FrozenPlanetV3", "FolsomDamCoreV0.95", "Wanderlust v03"],
+				"resources": [
+					{
+					"url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
+					"destination": "engine/105.0",
+					"extract": true
+					}
+                ]
+            },
+            "no_start_script" : true,
+            "launch": {
+				"start_args" : ["--menu", "rapid://tchobby:stable"],
+				"engine": "105.0"
+            }
+        },  
+		{
+            "package": {
                 "id": "complete-win",
-                "display": "Stable Windows",
+                "display": "Stable",
                 "platform": "win32"
             },
             "downloads": {
@@ -26,16 +49,16 @@
         },
 		{
             "package": {
-                "id": "complete-linux",
-                "display": "Stable Linux",
-                "platform": "linux"
+                "id": "dev-lobby-windows",
+                "display": "Development Test",
+                "platform": "win32"
             },
             "downloads": {
-				"games" : ["chobby:test", "tchobby:stable", "tc:stable", "tcampaign:stable"],
+				"games" : ["chobby:test", "tchobby:test", "tc:test", "tcampaign:test"],
 				"maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "FrozenPlanetV3", "FolsomDamCoreV0.95", "Wanderlust v03"],
 				"resources": [
 					{
-					"url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
+					"url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
 					"destination": "engine/105.0",
 					"extract": true
 					}
@@ -43,14 +66,14 @@
             },
             "no_start_script" : true,
             "launch": {
-				"start_args" : ["--menu", "rapid://tchobby:stable"],
+				"start_args" : ["--menu", "rapid://tchobby:test"],
 				"engine": "105.0"
             }
-        },		
+        },
         {
             "package": {
-                "id": "dev-lobby-windows",
-                "display": "Development Windows",
+                "id": "dev-local-windows",
+                "display": "Development Local",
                 "platform": "win32"
             },
             "downloads": {

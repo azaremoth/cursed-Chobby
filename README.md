@@ -1,1 +1,1 @@
-# Config files for Launcher  
+# Config files for Launcher for release builds

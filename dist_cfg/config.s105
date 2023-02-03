@@ -12,8 +12,8 @@
 				"maps" : ["Comet Catcher Redux", "Red Comet Remake 1.7", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "FrozenPlanetV3", "FolsomDamCoreV0.95", "Wanderlust v03"],
 				"resources": [
 					{
-					"url": "https://github.com/beyond-all-reason/spring/releases/download/spring_bar_%7BBAR105%7D105.1.1-1500-gd162298/spring_bar_.BAR105.105.1.1-1500-gd162298_windows-64-minimal-portable.7z",
-					"destination": "engine/105.1.1-1500-gd162298",
+					"url": "https://content.spring-launcher.com/engines/spring_105.0_minimal-portable-linux64-static.7z",
+					"destination": "engine/105.0",
 					"extract": true
 					}
                 ]
@@ -21,7 +21,7 @@
             "no_start_script" : true,
             "launch": {
 				"start_args" : ["--menu", "rapid://tchobby:stable"],
-				"engine": "105.1.1-1500-gd162298 BAR105"
+				"engine": "105.0"
             }
         },  
 		{
@@ -35,8 +35,8 @@
 				"maps" : ["Comet Catcher Redux", "TandemCraters", "Barren 2", "Onyx Cauldron 1.9", "Titan v3.1", "Ravaged_v2", "Badlands 2.1", "Iceland_v1", "Mescaline_V2", "FrozenPlanetV3", "FolsomDamCoreV0.95", "Wanderlust v03"],
 				"resources": [
 					{
-					"url": "https://github.com/beyond-all-reason/spring/releases/download/spring_bar_%7BBAR105%7D105.1.1-1500-gd162298/spring_bar_.BAR105.105.1.1-1500-gd162298_windows-64-minimal-portable.7z",
-					"destination": "engine/105.1.1-1500-gd162298",
+					"url": "https://content.spring-launcher.com/engines/spring_105.0_win64-minimal-portable.7z",
+					"destination": "engine/105.0",
 					"extract": true
 					}
                 ]
@@ -44,7 +44,7 @@
             "no_start_script" : true,
             "launch": {
 				"start_args" : ["--menu", "rapid://tchobby:stable"],
-				"engine": "105.1.1-1500-gd162298 BAR105"
+				"engine": "105.0"
             }
         }
     ]
